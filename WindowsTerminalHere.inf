@@ -33,7 +33,7 @@ HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallA
 HKCR,Directory\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
 HKCR,Directory\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1"""
 HKCR,Drive\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
-HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1"""
+HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1\"""
 
 [Strings]
 WindowsTerminalHereName="Windows Terminal Here PowerToy"
