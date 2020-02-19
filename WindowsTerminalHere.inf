@@ -35,9 +35,9 @@ HKCR,Directory\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\
 HKCR,Directory\Background\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
 HKCR,Directory\Background\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%V"""
 HKCR,Drive\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
-HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1"""
+HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1\"""
 
 [Strings]
 WindowsTerminalHereName="Windows Terminal Here PowerToy"
-WindowsTerminalHereAccel="Windows &Terminal Here"
+WindowsTerminalHereAccel="Open Windows &Terminal Here"
 UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\WindowsTerminalHere"
