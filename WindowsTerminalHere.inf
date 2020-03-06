@@ -31,13 +31,17 @@ WindowsTerminalHere.INF
 HKLM,%UDHERE%,DisplayName,,"%WindowsTerminalHereName%"
 HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\WindowsTerminalHere.inf"
 HKCR,Directory\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Directory\Shell\WindowsTerminalHere,Icon,,"%WindowsTerminalHereIcon%"
 HKCR,Directory\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1"""
 HKCR,Directory\Background\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Directory\Background\Shell\WindowsTerminalHere,Icon,,"%WindowsTerminalHereIcon%"
 HKCR,Directory\Background\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%V"""
 HKCR,Drive\Shell\WindowsTerminalHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Drive\Shell\WindowsTerminalHere,Icon,,"%WindowsTerminalHereIcon%"
 HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\wt.exe -d " ""%1\"""
 
 [Strings]
 WindowsTerminalHereName="Windows Terminal Here PowerToy"
 WindowsTerminalHereAccel="Open Windows &Terminal Here"
 UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\WindowsTerminalHere"
+WindowsTerminalHereIcon=""C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.9.433.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe",0"
