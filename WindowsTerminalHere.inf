@@ -44,4 +44,4 @@ HKCR,Drive\Shell\WindowsTerminalHere\command,,0x00020000,""%%LOCALAPPDATA%%\Micr
 WindowsTerminalHereName="Windows Terminal Here PowerToy"
 WindowsTerminalHereAccel="Open Windows &Terminal Here"
 UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\WindowsTerminalHere"
-WindowsTerminalHereIcon=""C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.9.433.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe",0"
+WindowsTerminalHereIcon=""C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.11.1191.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe",0"
