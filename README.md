@@ -1,5 +1,5 @@
 # WindowsTerminalHere
-a .inf file for a right click Explorer "windows terminal here" for WT 0.11 until it's supported directly
+a .inf file for a right click Explorer "windows terminal here" for WT 1.0.1401.0 until it's supported directly
 
 ## Installation
 
