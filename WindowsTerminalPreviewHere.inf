@@ -48,4 +48,4 @@ HKCR,Drive\Shell\WindowsTerminalPreviewHere\command,,0x00020000,""%%LOCALAPPDATA
 WindowsTerminalHereName="Windows Terminal (Preview) Here PowerToy"
 WindowsTerminalHereAccel="Open Windows &Terminal (Preview) Here"
 UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\WindowsTerminalPreviewHere"
-WindowsTerminalHereIcon="""C:\Program Files\WindowsApps\Microsoft.WindowsTerminalPreview_1.0.1402.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe"",0"
+WindowsTerminalHereIcon=""C:\Program Files\WindowsApps\Microsoft.WindowsTerminalPreview_1.0.1402.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe",0"
