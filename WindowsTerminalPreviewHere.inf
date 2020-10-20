@@ -1,0 +1,51 @@
+; "Windows Terminal" PowerToy
+
+[version]
+signature="$CHICAGO$"
+
+[WindowsTerminalHereInstall]
+CopyFiles = WindowsTerminalPreviewHere.Files.Inf
+AddReg    = WindowsTerminalPreviewHere.Reg
+
+[DefaultInstall]
+CopyFiles = WindowsTerminalPreviewHere.Files.Inf
+AddReg    = WindowsTerminalPreviewHere.Reg
+
+[DefaultUnInstall]
+DelFiles  = WindowsTerminalPreviewHere.Files.Inf
+DelReg    = WindowsTerminalPreviewHere.Reg
+
+[SourceDisksNames]
+55="Windows Terminal (Preview) Here","",1
+
+[SourceDisksFiles]
+WindowsTerminalPreviewHere.INF=55
+
+[DestinationDirs]
+WindowsTerminalPreviewHere.Files.Inf = 17
+
+[WindowsTerminalPreviewHere.Files.Inf]
+WindowsTerminalPreviewHere.INF
+
+[WindowsTerminalPreviewHere.Reg]
+HKLM,%UDHERE%
+HKLM,%UDHERE%,DisplayName,,"%WindowsTerminalPreviewHereName%"
+HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\WindowsTerminalPreviewHere.inf"
+HKCR,Directory\Shell\WindowsTerminalPreviewHere
+HKCR,Directory\Shell\WindowsTerminalPreviewHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Directory\Shell\WindowsTerminalPreviewHere,Icon,,"%WindowsTerminalHereIcon%"
+HKCR,Directory\Shell\WindowsTerminalPreviewHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\wt.exe -d " ""%1"""
+HKCR,Directory\Background\Shell\WindowsTerminalPreviewHere
+HKCR,Directory\Background\Shell\WindowsTerminalPreviewHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Directory\Background\Shell\WindowsTerminalPreviewHere,Icon,,"%WindowsTerminalHereIcon%"
+HKCR,Directory\Background\Shell\WindowsTerminalPreviewHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\wt.exe -d " ""%V"""
+HKCR,Drive\Shell\WindowsTerminalPreviewHere
+HKCR,Drive\Shell\WindowsTerminalPreviewHere,,,"%WindowsTerminalHereAccel%"
+HKCR,Drive\Shell\WindowsTerminalPreviewHere,Icon,,"%WindowsTerminalHereIcon%"
+HKCR,Drive\Shell\WindowsTerminalPreviewHere\command,,0x00020000,""%%LOCALAPPDATA%%\Microsoft\WindowsApps\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\wt.exe -d " ""%1\"""
+
+[Strings]
+WindowsTerminalHereName="Windows Terminal (Preview) Here PowerToy"
+WindowsTerminalHereAccel="Open Windows &Terminal (Preview) Here"
+UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\WindowsTerminalPreviewHere"
+WindowsTerminalHereIcon=""C:\Program Files\WindowsApps\Microsoft.WindowsTerminalPreview_1.0.1402.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe",0"
